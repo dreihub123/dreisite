@@ -67,37 +67,40 @@ nav a.active{
 	border-bottom: 3px solid #b74b4b;
 }
 
-@media(max-width:995px){
-	nav{
-		position:absolute;
-		top:100%;
-		right: 0;
-		width:40%;
-		border-left: 3px solid #b74b4b;
-		border-bottom: 3px solid #b74b4b;
-		border-bottom-left-radius: 2rem;
-		padding: 1rem solid;
-		background-color: #161616;
-		border-top: 0.1 rem solid rgba(0,0,0,0.1);
-	}
-	nav.active{
-		display: block;
+@media (max-width: 995px) {
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: none; /* Hidden by default */
+        border-left: none;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 0;
+        background-color: #161616;
+        text-align: center;
+    }
 
-	}
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-	nav a{
-		display: block;
-		font-size: 2rem;
-		margin: 3rem 0;
-	}
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
 
-	nav a:hover,
-	nav a.active{
-		padding: 1rem;
-		border-radius: 0.5rem;
-		border-bottom: 0.5rem solid #b74b4b;
-
-	}
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
 }
 
 section{
